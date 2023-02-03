@@ -1,9 +1,72 @@
+/* =================================================================== 
+ *
+ *  Hola v1.0 Main Stylesheet
+ *  10-02-2017
+ *  ------------------------------------------------------------------
+ *
+ *  TOC:
+ *  # webfonts and iconfonts
+ *  # base style overrides
+ *      ## links
+ *  # typography & general theme styles
+ *      ## lists
+ *      ## responsive video container
+ *      ## floated image
+ *      ## tables
+ *      ## spacing
+ *      ## pace.js styles - minimal
+ *  # forms
+ *      ## style placeholder text
+ *      ## Change Autocomplete styles in Chrome
+ *  # buttons
+ *  # additional components
+ *      ## alert box
+ *      ## additional typo styles
+ *      ## skillbars
+ *  # common and reusable theme styles 
+ *      ## section intro
+ *      ## blog-list
+ *  # header styles
+ *      ## header logo
+ *      ## mobile menu toggle
+ *      ## navigation
+ *  # home
+ *      ## home content
+ *      ## home social
+ *      ## home animations
+ *  # about
+ *      ## timeline
+ *  # works
+ *      ## bricks/masonry
+ *  # testimonials
+ *  # blog
+ *  # cta
+ *  # stats
+ *  # contact
+ *  # footer
+ *      ## go to top
+ *  # blog styles
+ *      ## blog page header
+ *      ## blog content
+ *      ## comments
+ *
+ * =================================================================== */
 
+
+/* ===================================================================
+ * # webfonts and iconfonts - (_document-setup.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 @import url("iconic/css/iconmonstr-iconic-font.min.css");
 @import url("fonts.css");
 
 
+
+/* ===================================================================
+ * # base style overrides - (_document-setup.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 html {
     font-size: 10px;
@@ -30,6 +93,9 @@ body {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * ## links - (_document-setup.scss) 
+ * ------------------------------------------------------------------- */
 
 a {
     color: #862121;
@@ -47,10 +113,13 @@ a:focus {
 
 
 
-
+/* ===================================================================
+ * # typography & general theme styles - (_document-setup.scss) 
+ * 
+ * ------------------------------------------------------------------- */
 
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-medium", sans-serif;
     color: #0D0A0B;
     font-style: normal;
     font-weight: normal;
@@ -81,7 +150,7 @@ h5, .h05, h6, .h06 {
 }
 
 h1, .h01 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
     font-size: 3.6rem;
     line-height: 1.25;
     letter-spacing: -.1rem;
@@ -115,7 +184,7 @@ h5, .h05 {
 }
 
 h6, .h06 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
     font-size: 1.4rem;
     line-height: 1.5;
     text-transform: uppercase;
@@ -127,7 +196,7 @@ p img {
 }
 
 p.lead {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 2rem;
     line-height: 1.8;
     margin-bottom: 3.6rem;
@@ -148,11 +217,11 @@ em, i, strong, b {
 }
 
 em, i {
-    font-family: "librebaskerville-italic", serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;", serif;
 }
 
 strong, b {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;", serif;
 }
 
 small {
@@ -179,7 +248,7 @@ blockquote:before {
 }
 
 blockquote p {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     padding: 0;
     font-size: 2.1rem;
     line-height: 1.857;
@@ -188,7 +257,7 @@ blockquote p {
 
 blockquote cite {
     display: block;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     line-height: 1.5;
@@ -204,7 +273,7 @@ blockquote cite a, blockquote cite a:visited {
 }
 
 abbr {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;", serif;
     font-variant: small-caps;
     text-transform: lowercase;
     letter-spacing: .05rem;
@@ -264,7 +333,12 @@ hr {
     clear: both;
     margin: 2.4rem 0 1.5rem;
     height: 0;
+}
 
+
+/* ------------------------------------------------------------------- 
+ * ## Lists - (_document-setup.scss)  
+ * ------------------------------------------------------------------- */
 
 ol {
     list-style: decimal;
@@ -320,7 +394,9 @@ dd {
 }
 
 
-
+/* ------------------------------------------------------------------- 
+ * ## responsive video container - (_document-setup)
+ * ------------------------------------------------------------------- */
 
 .video-container {
     position: relative;
@@ -341,7 +417,9 @@ dd {
 }
 
 
-
+/* ------------------------------------------------------------------- 
+ * ## floated image - (_document-setup)  
+ * ------------------------------------------------------------------- */
 
 img.pull-right {
     margin: 1.5rem 0 0 3rem;
@@ -352,6 +430,9 @@ img.pull-left {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * ## tables - (_document-setup.scss)  
+ * ------------------------------------------------------------------- */
 
 table {
     border-width: 0;
@@ -368,7 +449,7 @@ th, td {
 
 th {
     color: #0D0A0B;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
 }
 
 td {
@@ -389,7 +470,9 @@ th:last-child, td:last-child {
 }
 
 
-
+/* ------------------------------------------------------------------- 
+ * ## Spacing - (_document-setup.scss)  
+ * ------------------------------------------------------------------- */
 
 button, .btn {
     margin-bottom: 1.2rem;
@@ -417,6 +500,9 @@ form,
 }
 
 
+/* ------------------------------------------------------------------- 
+ * ## pace.js styles - minimal  - (_document-setup.scss)
+ * ------------------------------------------------------------------- */
 
 .pace {
     -webkit-pointer-events: none;
@@ -446,7 +532,10 @@ form,
 
 
 
-
+/* ===================================================================
+ * preloader - (_preloader-2.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 #preloader {
     position: fixed;
@@ -503,6 +592,10 @@ form,
 
 
 
+/* ===================================================================
+ * # forms - (_forms.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 fieldset {
     border: none;
@@ -522,7 +615,7 @@ textarea, select {
     border: 0;
     outline: none;
     color: #333333;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 1.5rem;
     line-height: 3rem;
     max-width: 100%;
@@ -582,7 +675,7 @@ textarea, select {
 }
 
 
-
+/* IE9 and below */
 
 .oldie .ss-custom-select::after {
     display: none;
@@ -605,7 +698,7 @@ textarea:focus, select:focus {
 }
 
 label, legend {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
     font-size: 1.4rem;
     margin-bottom: .9rem;
     line-height: 1.714;
@@ -620,7 +713,7 @@ input[type="checkbox"], input[type="radio"] {
 label > .label-text {
     display: inline-block;
     margin-left: 1rem;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     line-height: inherit;
 }
 
@@ -631,6 +724,9 @@ label > input[type="checkbox"], label > input[type="radio"] {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * ## style placeholder text - (_forms.scss)
+ * ------------------------------------------------------------------- */
 
 ::-webkit-input-placeholder {
     color: #6c6c6c;
@@ -655,6 +751,9 @@ label > input[type="checkbox"], label > input[type="radio"] {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * ## Change Autocomplete styles in Chrome - (_forms.scss)
+ * ------------------------------------------------------------------- */
 
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus input:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
     -webkit-text-fill-color: #cf3e3e;
@@ -663,13 +762,17 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 
 
+/* ===================================================================
+ * # buttons - (_buttons.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 .btn, button, 
 input[type="submit"], 
 input[type="reset"], 
 input[type="button"] {
     display: inline-block;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-semibold", sans-serif;
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
@@ -704,6 +807,9 @@ input[type="button"]:focus {
 }
 
 
+/* button primary
+ * ------------------------------------------------- */
+
 .btn.btn--primary, 
 button.btn--primary, 
 input[type="submit"].btn--primary, 
@@ -729,6 +835,8 @@ input[type="button"].btn--primary:focus {
 }
 
 
+/* button modifiers
+ * ------------------------------------------------- */
 
 .btn.full-width, button.full-width {
     width: 100%;
@@ -769,13 +877,22 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 
+/* =================================================================== 
+ * # additional components - (_others.scss)
+ *
+ * ------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- 
+ * ## alert box - (_alert-box.scss)
+ * ------------------------------------------------------------------- */
 
 .alert-box {
     padding: 2.1rem 4rem 2.1rem 3rem;
     position: relative;
     margin-bottom: 3rem;
     border-radius: 3px;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 1.5rem;
     line-height: 1.6;
 }
@@ -812,13 +929,20 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * ## additional typo styles - (_additional-typo.scss)
+ * ------------------------------------------------------------------- */
+
+
+/* drop cap 
+ * ----------------------------------------------- */
 
 .drop-cap:first-letter {
     float: left;
     margin: 0;
     padding: 1.5rem .6rem 0 0;
     font-size: 8.4rem;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
     line-height: 6rem;
     text-indent: 0;
     background: transparent;
@@ -826,7 +950,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-
+/* line definition style 
+ * ----------------------------------------------- */
 
 .lining dt, .lining dd {
     display: inline;
@@ -852,6 +977,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+/* dictionary definition style 
+ * ----------------------------------------------- */
+
 .dictionary-style dt {
     display: inline;
     counter-reset: definitions;
@@ -871,6 +999,19 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     content: counter(definitions, decimal) ". ";
 }
 
+
+/** 
+ * Pull Quotes
+ * -----------
+ * markup:
+ *
+ * <aside class="pull-quote">
+ *		<blockquote>
+ *			<p></p>
+ *		</blockquote>
+ *	</aside>
+ *
+ * --------------------------------------------------------------------- */
 
 .pull-quote {
     position: relative;
@@ -906,6 +1047,18 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+/** 
+ * Stats Tab
+ * ---------
+ * markup:
+ *
+ * <ul class="stats-tabs">
+ *		<li><a href="#">[value]<em>[name]</em></a></li>
+ *	</ul>
+ *
+ * Extend this object into your markup.
+ *
+ * --------------------------------------------------------------------- */
 
 .stats-tabs {
     padding: 0;
@@ -928,7 +1081,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .stats-tabs li a {
     display: inline-block;
     font-size: 2.5rem;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-semibold", sans-serif;
     border: none;
     color: #151515;
 }
@@ -941,10 +1094,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     margin: .6rem 0 0 0;
     font-size: 1.4rem;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     color: #6c6c6c;
 }
 
+
+/* ------------------------------------------------------------------- 
+ * ## skillbars - (_skillbars.scss)
+ * ------------------------------------------------------------------- */
 
 .skill-bars {
     list-style: none;
@@ -964,7 +1121,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: absolute;
     left: 0;
     top: -3rem;
-    font-family: font-family: 'Libre Franklin', sans-serif;;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-extrabold", sans-serif;
     color: #0D0A0B;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -984,7 +1141,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     right: 0;
     top: -3.6rem;
     display: block;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     color: #FFFFFF;
     font-size: 1.1rem;
     line-height: 1;
@@ -1085,6 +1242,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+
+/* ===================================================================
+ * # common and reusable theme styles  - (_common-styles.scss)
+ *
+ * ------------------------------------------------------------------- */
+
 .wide {
     max-width: 1400px;
 }
@@ -1094,6 +1257,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * ## section intro - (_common-styles.scss)
+ * ------------------------------------------------------------------- */
 
 .section-intro {
     text-align: center;
@@ -1101,14 +1267,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .section-intro h1 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;", serif;
     font-size: 4.8rem;
     line-height: 1.375;
     margin-top: 0;
 }
 
 .section-intro h3 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-semibold", sans-serif;
     font-size: 2rem;
     color: #862121;
     text-transform: uppercase;
@@ -1131,6 +1297,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * section-intro
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 800px) {
     .section-intro h1 {
@@ -1159,6 +1329,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     }
 }
 
+
+/* ------------------------------------------------------------------- 
+ * ## blog-list - (_common-styles.scss)
+ * ------------------------------------------------------------------- */
+
 .blog-list {
     margin-top: 6rem;
     margin-left: 0;
@@ -1177,7 +1352,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .blog-list h2 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-medium", sans-serif;
     font-size: 3rem;
     line-height: 1.2;
     margin-top: .3rem;
@@ -1203,7 +1378,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .blog-list .blog-date {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 1.5rem;
     color: #862121;
 }
@@ -1219,7 +1394,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .blog-list .blog-cat {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-medium", sans-serif;
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -1246,6 +1421,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * blog-list
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1200px) {
     .blog-list article:nth-child(2n+1) {
@@ -1273,6 +1452,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 
+/* ===================================================================
+ * # header styles - (_site-layout.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 .s-header {
     width: 100%;
@@ -1320,7 +1503,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
-
+/* -------------------------------------------------------------------
+ * ## header logo - (_site-layout.css) 
+ * ------------------------------------------------------------------- */
 
 .header-logo {
     display: inline-block;
@@ -1347,6 +1532,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * ## mobile menu toggle - (_site-layout.css) 
+ * ------------------------------------------------------------------- */
+
 .header-menu-toggle {
     display: none;
     position: absolute;
@@ -1355,7 +1544,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     height: 42px;
     width: 42px;
     line-height: 42px;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -1436,8 +1625,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * ## navigation - (_site-layout.scss) 
+ * ------------------------------------------------------------------- */
+
 .header-nav-wrap {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: .25rem;
@@ -1466,12 +1659,15 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-nav li.current a {
-    font-family: font-family: 'Libre Franklin', sans-serif;;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-extrabold", sans-serif;
     color: #af2b2b;
 }
 
 
-
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * header
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 800px) {
     .header-logo {
@@ -1509,6 +1705,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+/* -------------------------------------------------------------------
+ * make sure the menu is visible on larger screens
+ * ------------------------------------------------------------------- */
 
 @media only screen and (min-width: 801px) {
     .header-nav-wrap {
@@ -1518,6 +1717,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 
 
+/* ===================================================================
+ * # home - (_site-layout.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 .s-home {
     width: 100%;
@@ -1556,6 +1759,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * ## home content - (_site-layout.scss) 
+ * ------------------------------------------------------------------- */
 
 .home-content {
     display: table-cell;
@@ -1567,7 +1773,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content h3 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
     font-size: 1.8rem;
     color: #862121;
     text-transform: uppercase;
@@ -1591,7 +1797,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content h1 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;", serif;
     color: #FFFFFF;
     font-size: 6rem;
     line-height: 1.35;
@@ -1634,7 +1840,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content__scroll a {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-semibold", sans-serif;
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
@@ -1668,9 +1874,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * ## home social - (_site-layout.scss) 
+ * ------------------------------------------------------------------- */
 
 .home-social {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
     list-style: none;
     margin: 0;
     padding-bottom: 18rem;
@@ -1746,6 +1955,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 
+/* animate .home-content__main
+ * ------------------------------------------------------------------- */
 
 html.ss-preload .home-content__main {
     opacity: 0;
@@ -1761,6 +1972,12 @@ html.no-csstransitions .home-content__main {
     opacity: 1;
 }
 
+
+/* ------------------------------------------------------------------- 
+ * ## home animations - (_site-layout.scss) 
+ * ------------------------------------------------------------------- */
+
+/* bounce */
 
 @-webkit-keyframes bounce {
     0%, 100% {
@@ -1789,6 +2006,7 @@ html.no-csstransitions .home-content__main {
 }
 
 
+/* fade in */
 
 @-webkit-keyframes fadeIn {
     from {
@@ -1848,6 +2066,10 @@ html.no-csstransitions .home-content__main {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * home
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1500px) {
     .home-content h1 {
@@ -1969,6 +2191,10 @@ html.no-csstransitions .home-content__main {
 
 
 
+/* ===================================================================
+ * # about - (_site-layout.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 .s-about {
     padding-top: 15rem;
@@ -1989,6 +2215,10 @@ html.no-csstransitions .home-content__main {
     padding-left: 40px;
 }
 
+
+/* ------------------------------------------------------------------- 
+ * ## timeline - (_site-layout.scss) 
+ * ------------------------------------------------------------------- */
 
 .timeline {
     position: relative;
@@ -2032,7 +2262,7 @@ html.no-csstransitions .home-content__main {
     letter-spacing: .15rem;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: .9rem;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
 }
 
 .timeline__header h3 {
@@ -2050,7 +2280,10 @@ html.no-csstransitions .home-content__main {
 }
 
 
-
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * about
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1000px) {
     .about-content .left {
@@ -2114,6 +2347,11 @@ html.no-csstransitions .home-content__main {
 
 
 
+/* ===================================================================
+ * # works - (_site-layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+
 .s-works {
     padding-top: 15rem;
     padding-bottom: 15.6rem;
@@ -2122,6 +2360,9 @@ html.no-csstransitions .home-content__main {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * ## bricks/masonry - (_site-layout.scss)
+ * ------------------------------------------------------------------- */
 
 .masonry-wrap {
     margin-top: 4.8rem;
@@ -2223,7 +2464,7 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__title {
     color: #FFFFFF;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-semibold", sans-serif;
     font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -2232,7 +2473,7 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__cat {
     color: rgba(255, 255, 255, 0.5);
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 1.5rem;
     margin-bottom: 0;
 }
@@ -2312,6 +2553,11 @@ html.no-csstransitions .home-content__main {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * works
+ * ------------------------------------------------------------------- */
+
 @media only screen and (max-width: 1700px) {
     .masonry-wrap {
         width: 1400px;
@@ -2363,6 +2609,10 @@ html.no-csstransitions .home-content__main {
 
 
 
+/* ===================================================================
+ * # testimonials - (_site-layout.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 .s-testimonials {
     background-color: #0D0A0B;
@@ -2392,7 +2642,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .testimonials-header h1 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "librebaskerville-bold", serif;
     font-size: 4.2rem;
     margin-top: 0;
     color: #FFFFFF;
@@ -2534,7 +2784,7 @@ html.no-csstransitions .home-content__main {
 
 .testimonials__author span {
     display: block;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 1.3rem;
     color: rgba(95, 95, 95, 0.7);
     text-transform: none;
@@ -2542,6 +2792,10 @@ html.no-csstransitions .home-content__main {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * testimonials
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1200px) {
     .testimonials-header h1 {
@@ -2599,6 +2853,11 @@ html.no-csstransitions .home-content__main {
 
 
 
+/* ===================================================================
+ * # blog - (_site-layout.scss)
+ *
+ * ------------------------------------------------------------------- */
+
 .s-blog {
     padding-top: 15rem;
     padding-bottom: 9.6rem;
@@ -2607,6 +2866,11 @@ html.no-csstransitions .home-content__main {
 }
 
 
+
+/* ===================================================================
+ * # cta - (_site-layout.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 .s-cta {
     margin-top: -9rem;
@@ -2631,6 +2895,11 @@ html.no-csstransitions .home-content__main {
 }
 
 
+
+/* ===================================================================
+ * # stats - (_site-layout.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 .s-stats {
     background-color: #f1f1f1;
@@ -2659,7 +2928,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .stats__count {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;", serif;
     font-size: 7.2rem;
     line-height: 1;
     color: #0D0A0B;
@@ -2683,7 +2952,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .stats h4 {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-semibold", sans-serif;
     margin-top: 1.8rem;
     color: rgba(0, 0, 0, 0.4);
     font-size: 1.8rem;
@@ -2720,6 +2989,11 @@ html.no-csstransitions .home-content__main {
     color: rgba(255, 255, 255, 0.4);
 }
 
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * stats
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1200px) {
     .stats__count {
@@ -2759,6 +3033,11 @@ html.no-csstransitions .home-content__main {
 }
 
 
+
+/* ===================================================================
+ * # contact - (_site-layout.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 .s-contact {
     background-color: #151515;
@@ -2804,7 +3083,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-contact .form-field label {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-semibold", sans-serif;
     font-size: 1.1rem;
     line-height: 2.4rem;
     position: absolute;
@@ -2912,7 +3191,7 @@ html.no-csstransitions .home-content__main {
 
 .submit-loader .text-loader {
     display: none;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
     font-size: 1.4rem;
     color: #FFFFFF;
     letter-spacing: .2rem;
@@ -2928,6 +3207,9 @@ html.no-csstransitions .home-content__main {
 }
 
 
+/* --------------------------------------------------------------- 
+ * loader animation - (_site-layout.scss)
+ * --------------------------------------------------------------- */
 
 .s-loader {
     margin: 1.2rem auto 3rem;
@@ -2986,6 +3268,10 @@ html.no-csstransitions .home-content__main {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * contact
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 800px) {
     .contact__form {
@@ -3010,9 +3296,13 @@ html.no-csstransitions .home-content__main {
 
 
 
+/* ===================================================================
+ * # footer - (_site-layout.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 footer {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 14px;
     padding: 6.6rem 0 4.2rem;
     text-align: center;
@@ -3040,7 +3330,7 @@ footer a:hover, footer a:focus {
     list-style: none;
     margin-top: 3rem;
     margin-left: 0;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
@@ -3108,6 +3398,11 @@ footer a:hover, footer a:focus {
     display: none;
 }
 
+
+/* ------------------------------------------------------------------- 
+ * ## go to top
+ * ------------------------------------------------------------------- */
+
 .go-top {
     position: fixed;
     bottom: 0;
@@ -3142,6 +3437,10 @@ footer a:hover, footer a:focus {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * footer 
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 600px) {
     .footer-social li {
@@ -3178,7 +3477,10 @@ footer a:hover, footer a:focus {
 
 
 
-
+/* ===================================================================
+ * # blog styles - (_blog.scss)
+ *
+ * ------------------------------------------------------------------- */
 
 article.blog-single {
     background-color: #FFFFFF;
@@ -3190,6 +3492,9 @@ article.blog-single .blog-content {
 }
 
 
+/* -------------------------------------------------------------------
+ * ## blog page header
+ * ------------------------------------------------------------------- */
 
 .page-header {
     background-color: #0D0A0B;
@@ -3240,7 +3545,7 @@ article.blog-single .blog-content {
 }
 
 .page-header__content {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 2rem;
     line-height: 1.8;
     position: relative;
@@ -3272,7 +3577,7 @@ article.blog-single .blog-content {
     text-transform: uppercase;
     letter-spacing: .16rem;
     color: rgba(255, 255, 255, 0.8);
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
 }
 
 .page-header__cat a {
@@ -3292,7 +3597,7 @@ article.blog-single .blog-content {
 }
 
 .page-header__date {
-    font-family: "montserrat-light", sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-light", sans-serif;
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.4);
 }
@@ -3308,7 +3613,7 @@ article.blog-single .blog-content {
 .page-header__title {
     color: #FFFFFF;
     position: relative;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;", serif;
     font-size: 6.6rem;
     line-height: 1.227;
     margin-top: 0;
@@ -3364,6 +3669,11 @@ article.blog-single .blog-content {
     color: #000000;
 }
 
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * blog page header
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1200px) {
     .page-header__content {
@@ -3422,6 +3732,10 @@ article.blog-single .blog-content {
 }
 
 
+/* -------------------------------------------------------------------
+ * ## blog content - _blog.scss
+ * ------------------------------------------------------------------- */
+
 .blog-content-wrap {
     background-color: #FFFFFF;
     padding-top: 4.2rem;
@@ -3443,13 +3757,16 @@ article.blog-single .blog-content {
 }
 
 
+/* post tags
+ * ------------------------------------------------- */
+
 .blog-content__tags {
     margin-top: 6rem;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
 }
 
 .blog-content__tags span {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
     color: #0D0A0B;
     position: relative;
     padding-right: 55px;
@@ -3480,7 +3797,7 @@ article.blog-single .blog-content {
 
 .blog-content__tags .blog-content__tag-list a {
     display: inline-block;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 1.3rem;
     line-height: inherit;
     color: #797979;
@@ -3503,6 +3820,9 @@ article.blog-single .blog-content {
 }
 
 
+/* blog single page navigation
+ * ------------------------------------------------- */
+
 .blog-content__pagenav {
     margin-top: 7.8rem;
     padding-top: 1.8rem;
@@ -3522,7 +3842,7 @@ article.blog-single .blog-content {
 
 .blog-content__nav span {
     display: block;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 1.6rem;
     color: #797979;
     margin-bottom: 1.2rem;
@@ -3531,7 +3851,7 @@ article.blog-single .blog-content {
 }
 
 .blog-content__nav a {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
     font-size: 2.2rem;
     line-height: 1.5;
     color: #0D0A0B;
@@ -3563,6 +3883,10 @@ article.blog-single .blog-content {
     top: 2px;
 }
 
+
+/* blog entries navigation
+ * ------------------------------------------------- */
+
 .blog-entries-nav {
     text-align: center;
     max-width: 600px;
@@ -3586,6 +3910,10 @@ article.blog-single .blog-content {
 }
 
 
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * blog content
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 1200px) {
     .blog-content {
@@ -3674,12 +4002,18 @@ article.blog-single .blog-content {
 }
 
 
+/* -------------------------------------------------------------------
+ * ## comments - _blog.scss
+ * ------------------------------------------------------------------- */
 
 .comments-wrap {
     background-color: #f0f0f0;
     padding: 8.4rem 0 9rem;
 }
 
+
+/* comments
+ * -------------------------------------------------- */
 
 #comments {
     padding-top: 1.2rem;
@@ -3725,14 +4059,14 @@ article.blog-single .blog-content {
 }
 
 .comment__info cite {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
     font-size: 1.8rem;
     font-style: normal;
     color: #0D0A0B;
 }
 
 .comment__meta {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-regular", sans-serif;
     font-size: 1.45rem;
     line-height: 3rem;
     font-style: normal;
@@ -3741,7 +4075,7 @@ article.blog-single .blog-content {
 }
 
 .comment__meta .reply {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: "font-family: 'Libre Franklin', sans-serif;-bold", sans-serif;
 }
 
 .comment__meta .sep {
@@ -3765,6 +4099,9 @@ article.blog-single .blog-content {
 }
 
 
+/* comments form
+ * ---------------------------- */
+
 #comments .respond {
     padding-top: 4.2rem;
 }
@@ -3776,6 +4113,12 @@ article.blog-single .blog-content {
 #comments form .form-field {
     margin-bottom: 3.9rem;
 }
+
+
+/* ------------------------------------------------------------------- 
+ * responsive:
+ * comments
+ * ------------------------------------------------------------------- */
 
 @media only screen and (max-width: 800px) {
     #comments form button {
